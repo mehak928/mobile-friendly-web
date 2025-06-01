@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <style>
+    /* Base styles for desktop */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background: #b6e4f1;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding: 0;
+      background: #b1d4e2;
+      margin: 0;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    main section {
+      flex: 3;
+    }
+
+    main aside {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 10px;
+    }
+
+    /* MEDIA QUERY FOR SMALL SCREENS (Mobile Devices) */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      main section, main aside {
+        width: 100%;
+      }
+
+      nav li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Site</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>This is a desktop-to-mobile converted layout using CSS media queries.</p>
+    </section>
+    <aside>
+      <h3>News</h3>
+      <p>Latest updates and events.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Responsive Design</p>
+  </footer>
+</body>
+</html>
